@@ -1,6 +1,6 @@
 /* ===== Grid Page Boilerplate ===== */
 :root {
-    --max-width: 75rem; /* 1200px */
+    --max-width: 50rem; /* 1200px */
     --header-height: 4rem;
     --footer-height: 3rem;
 
@@ -56,7 +56,7 @@ header {
     justify-content: center;
     background-color: var(--nord1);
     padding: 25px;
-    height: 125px;
+    height: 85px;
 }
 
 footer {
@@ -92,7 +92,11 @@ main {
     overflow-y: auto;
 }
 
-.container {
+.container, #content {
     width: 100%;
+    background-color: var(--nord1);
     max-width: var(--max-width);
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
 }
