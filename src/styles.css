@@ -1,0 +1,98 @@
+/* ===== Grid Page Boilerplate ===== */
+:root {
+    --max-width: 75rem; /* 1200px */
+    --header-height: 4rem;
+    --footer-height: 3rem;
+
+    /* Polar Night */
+    --nord0: #2E3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+
+    /* Snow Storm */
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+
+    /* Frost */
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+
+    /* Aurora */
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+}
+
+* { 
+    box-sizing: border-box; 
+}
+
+html, body {
+    background-color: var(--nord3);
+    color: var(--nord9);
+    height: 100%; 
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: var(--header-height) 1fr var(--footer-height);
+    font-family: system-ui, sans-serif;
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--nord1);
+    padding: 25px;
+    height: 125px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--nord1);
+    padding: 25px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--nord7);
+}
+
+button {
+    background-color: var(--nord10);
+    color: var(--nord5);
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+}
