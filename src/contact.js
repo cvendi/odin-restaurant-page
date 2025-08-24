@@ -25,7 +25,7 @@ export default function Contact() {
 
         section.items.forEach(item => {
             const li = document.createElement('li');
-            li.innerHTML = `<span>${item.item}`;
+            li.innerHTML = `<span>${item.item}</span>`;
             list.appendChild(li);
         });
 
