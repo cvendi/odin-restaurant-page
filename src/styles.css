@@ -1,8 +1,8 @@
 /* ===== Grid Page Boilerplate ===== */
 :root {
     --max-width: 50rem;
-    --header-height: 8rem;
-    --footer-height: 6rem;
+    --header-height: 6rem;
+    --footer-height: 3rem;
 
     /* Polar Night */
     --nord0: #2E3440;
@@ -34,6 +34,8 @@
 }
 
 html, body {
+    background-image: url("./leonardo-yip-rVcuY3LfH_Q-unsplash.jpg");
+    background-size: cover;
     background-color: var(--nord3);
     color: var(--nord9);
     height: 100%; 
@@ -64,6 +66,11 @@ footer {
     justify-content: center;
     background-color: var(--nord1);
     padding: 25px;
+}
+
+footer a {
+    text-decoration: none; 
+    color: var(--nord14);
 }
 
 .menu ul {
