@@ -14,19 +14,23 @@ const page = (() => {
     const contactButton = document.querySelector("#contact-us-button");
 
     menuButton.addEventListener("click", () => {
-        menu();
+        clear()
+        Menu()
     });
 
     homeButton.addEventListener("click", () => {
-        home();
+        clear()
+        Home();
     });
 
     aboutButton.addEventListener("click", () => {
-        about();
+        clear()
+        About();
     });
 
     contactButton.addEventListener("click", () => {
-        contact();
+        clear()
+        Contact();
     });
 
     const clear = () => {
@@ -39,21 +43,6 @@ const page = (() => {
         clear()
         Home()
     };
-
-    const menu = () => {
-        clear()
-        Menu()
-    };
-
-    const about = () => {
-        clear()
-        About()
-    };
-
-    const contact = () => {
-        clear()
-        Contact()
-    }
 
     return { home };
 })();
