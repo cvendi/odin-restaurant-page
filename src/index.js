@@ -2,7 +2,6 @@ import "./styles.css";
 import Home from "./home.js";
 import Menu from "./menu.js";
 import Contact from "./contact.js";
-import ImageFile from './leonardo-yip-rVcuY3LfH_Q-unsplash.jpg';
 
 const page = (() => {
 
@@ -33,12 +32,6 @@ const page = (() => {
         }
     };
 
-    const home = () => {
-        clear()
-        Home()
-    };
-
-    return { home };
+    Home()
+    
 })();
-
-page.home();
